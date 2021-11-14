@@ -24,5 +24,18 @@ namespace WpfDefaultApp
         {
             InitializeComponent();
         }
+
+        private void SubmitButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            const string noName = "";
+            if (!string.IsNullOrEmpty(noName))
+            {
+                MessageBox.Show($"Hello {FirstNameText}");
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }
